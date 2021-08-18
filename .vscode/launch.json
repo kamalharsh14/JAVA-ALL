@@ -1,0 +1,826 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch day2",
+            "request": "launch",
+            "mainClass": "day2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Array1",
+            "request": "launch",
+            "mainClass": "Array1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch circular",
+            "request": "launch",
+            "mainClass": "Learnings.circular",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch anupam",
+            "request": "launch",
+            "mainClass": "DCCN.anupam",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch day1",
+            "request": "launch",
+            "mainClass": "DCCN.day1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch CHFGCD",
+            "request": "launch",
+            "mainClass": "Codechef.CHFGCD",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch SHOEFIT",
+            "request": "launch",
+            "mainClass": "Codechef.SHOEFIT",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch append",
+            "request": "launch",
+            "mainClass": "Learnings.append",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Doubly",
+            "request": "launch",
+            "mainClass": "Learnings.Doubly",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Cyclic",
+            "request": "launch",
+            "mainClass": "Learnings.Cyclic",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Reverse",
+            "request": "launch",
+            "mainClass": "Learnings.Reverse",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Delete",
+            "request": "launch",
+            "mainClass": "Learnings.Delete",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Insert",
+            "request": "launch",
+            "mainClass": "Learnings.Insert",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch llinsertattail",
+            "request": "launch",
+            "mainClass": "Learnings.llinsertattail",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch MINNOTES",
+            "request": "launch",
+            "mainClass": "Codechef.MINNOTES",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch RELATIVE",
+            "request": "launch",
+            "mainClass": "Codechef.RELATIVE",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch EITA",
+            "request": "launch",
+            "mainClass": "Codechef.EITA",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch question1",
+            "request": "launch",
+            "mainClass": "NEWTON.question1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch ZCO14003",
+            "request": "launch",
+            "mainClass": "Codechef.ZCO14003",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch LAPIN",
+            "request": "launch",
+            "mainClass": "Codechef.LAPIN",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch TEST",
+            "request": "launch",
+            "mainClass": "Codechef.TEST",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch SQALPAT",
+            "request": "launch",
+            "mainClass": "Codechef.SQALPAT",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch EXTRICHK",
+            "request": "launch",
+            "mainClass": "Codechef.EXTRICHK",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch SUMEVOD",
+            "request": "launch",
+            "mainClass": "Codechef.SUMEVOD",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch REVSTRPT",
+            "request": "launch",
+            "mainClass": "Codechef.REVSTRPT",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch REVMEE",
+            "request": "launch",
+            "mainClass": "Codechef.REVMEE",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch SECLAR",
+            "request": "launch",
+            "mainClass": "Codechef.SECLAR",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch DIFACTRS",
+            "request": "launch",
+            "mainClass": "Codechef.DIFACTRS",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch ISBOTH",
+            "request": "launch",
+            "mainClass": "Codechef.ISBOTH",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLAPPYBD",
+            "request": "launch",
+            "mainClass": "Codechef.FLAPPYBD",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch BLITZ3_2",
+            "request": "launch",
+            "mainClass": "Codechef.BLITZ3_2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch UNONE",
+            "request": "launch",
+            "mainClass": "Codechef.UNONE",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch HTMLTAGS",
+            "request": "launch",
+            "mainClass": "Codechef.HTMLTAGS",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch CHFRICH",
+            "request": "launch",
+            "mainClass": "Codechef.CHFRICH",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch EVENGAME",
+            "request": "launch",
+            "mainClass": "Codechef.EVENGAME",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign2Q1",
+            "request": "launch",
+            "mainClass": "Assignments.Assign2Q1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign3Q1",
+            "request": "launch",
+            "mainClass": "Assignments.Assign3Q1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign4Q1",
+            "request": "launch",
+            "mainClass": "Assignments.Assign4Q1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign4Q2",
+            "request": "launch",
+            "mainClass": "Assignments.Assign4Q2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign4Q3",
+            "request": "launch",
+            "mainClass": "Assignments.Assign4Q3",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign5Q1",
+            "request": "launch",
+            "mainClass": "Assignments.Assign5Q1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign5Q2",
+            "request": "launch",
+            "mainClass": "Assignments.Assign5Q2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign5Q3",
+            "request": "launch",
+            "mainClass": "Assignments.Assign5Q3",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign5Q4",
+            "request": "launch",
+            "mainClass": "Assignments.Assign5Q4",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign5Q5",
+            "request": "launch",
+            "mainClass": "Assignments.Assign5Q5",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign5Q6",
+            "request": "launch",
+            "mainClass": "Assignments.Assign5Q6",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign6Q1",
+            "request": "launch",
+            "mainClass": "Assignments.Assign6Q1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign6Q2",
+            "request": "launch",
+            "mainClass": "Assignments.Assign6Q2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign7",
+            "request": "launch",
+            "mainClass": "Assignments.Assign7",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Assign7Q1",
+            "request": "launch",
+            "mainClass": "Assignments.Assign7Q1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch DSLABQ15",
+            "request": "launch",
+            "mainClass": "Assignments.DSLABQ15",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Factorial",
+            "request": "launch",
+            "mainClass": "Assignments.Factorial",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch ISBN",
+            "request": "launch",
+            "mainClass": "Assignments.ISBN",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "mainClass": "Assignments.Main",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Q1_Circles",
+            "request": "launch",
+            "mainClass": "Assignments.Q1_Circles",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Quiz1Q1",
+            "request": "launch",
+            "mainClass": "Assignments.Quiz1Q1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch circularqueue",
+            "request": "launch",
+            "mainClass": "Assignments.circularqueue",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch code1",
+            "request": "launch",
+            "mainClass": "Assignments.code1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch code2",
+            "request": "launch",
+            "mainClass": "Assignments.code2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch code3",
+            "request": "launch",
+            "mainClass": "Assignments.code3",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch colon",
+            "request": "launch",
+            "mainClass": "Assignments.colon",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch q2",
+            "request": "launch",
+            "mainClass": "Assignments.q2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch q3",
+            "request": "launch",
+            "mainClass": "Assignments.q3",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch q4",
+            "request": "launch",
+            "mainClass": "Assignments.q4",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch q5",
+            "request": "launch",
+            "mainClass": "Assignments.q5",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch queue",
+            "request": "launch",
+            "mainClass": "Assignments.queue",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch BALLOON",
+            "request": "launch",
+            "mainClass": "Codechef.BALLOON",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch BNSONSTR",
+            "request": "launch",
+            "mainClass": "Codechef.BNSONSTR",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch CHEFHIEST",
+            "request": "launch",
+            "mainClass": "Codechef.CHEFHIEST",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch CHESUB",
+            "request": "launch",
+            "mainClass": "Codechef.CHESUB",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch CHOPRT",
+            "request": "launch",
+            "mainClass": "Codechef.CHOPRT",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch COCONUT",
+            "request": "launch",
+            "mainClass": "Codechef.COCONUT",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch CORTSENT",
+            "request": "launch",
+            "mainClass": "Codechef.CORTSENT",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch CTIME",
+            "request": "launch",
+            "mainClass": "Codechef.CTIME",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Codechef",
+            "request": "launch",
+            "mainClass": "Codechef.Codechef",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FCTRL2",
+            "request": "launch",
+            "mainClass": "Codechef.FCTRL2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLOW002",
+            "request": "launch",
+            "mainClass": "Codechef.FLOW002",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLOW004",
+            "request": "launch",
+            "mainClass": "Codechef.FLOW004",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLOW006",
+            "request": "launch",
+            "mainClass": "Codechef.FLOW006",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLOW007",
+            "request": "launch",
+            "mainClass": "Codechef.FLOW007",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLOW008",
+            "request": "launch",
+            "mainClass": "Codechef.FLOW008",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLOW013",
+            "request": "launch",
+            "mainClass": "Codechef.FLOW013",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLOW017",
+            "request": "launch",
+            "mainClass": "Codechef.FLOW017",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FLOW018",
+            "request": "launch",
+            "mainClass": "Codechef.FLOW018",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch FSQRT",
+            "request": "launch",
+            "mainClass": "Codechef.FSQRT",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch HOOP",
+            "request": "launch",
+            "mainClass": "Codechef.HOOP",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch INTEST",
+            "request": "launch",
+            "mainClass": "Codechef.INTEST",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch LUCKFOUR",
+            "request": "launch",
+            "mainClass": "Codechef.LUCKFOUR",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch MUFFINS3",
+            "request": "launch",
+            "mainClass": "Codechef.MUFFINS3",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch NUMCOMP1",
+            "request": "launch",
+            "mainClass": "Codechef.NUMCOMP1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch QUIZPLAG",
+            "request": "launch",
+            "mainClass": "Codechef.QUIZPLAG",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch REMISS",
+            "request": "launch",
+            "mainClass": "Codechef.REMISS",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch TLG",
+            "request": "launch",
+            "mainClass": "Codechef.TLG",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch TSORT",
+            "request": "launch",
+            "mainClass": "Codechef.TSORT",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch TWINGFT",
+            "request": "launch",
+            "mainClass": "Codechef.TWINGFT",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch VISA",
+            "request": "launch",
+            "mainClass": "Codechef.VISA",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch WAV2",
+            "request": "launch",
+            "mainClass": "Codechef.WAV2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch XORFOLD",
+            "request": "launch",
+            "mainClass": "Codechef.XORFOLD",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch q1",
+            "request": "launch",
+            "mainClass": "FINAL450.q1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch q2(1)",
+            "request": "launch",
+            "mainClass": "FINAL450.q2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch q3(1)",
+            "request": "launch",
+            "mainClass": "FINAL450.q3",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Arraylist",
+            "request": "launch",
+            "mainClass": "Learnings.Arraylist",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch ArraylistArray",
+            "request": "launch",
+            "mainClass": "Learnings.ArraylistArray",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Doublylinked1",
+            "request": "launch",
+            "mainClass": "Learnings.Doublylinked1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Inheritance1",
+            "request": "launch",
+            "mainClass": "Learnings.Inheritance1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Linkedlist2",
+            "request": "launch",
+            "mainClass": "Learnings.Linkedlist2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Tree",
+            "request": "launch",
+            "mainClass": "Learnings.Tree",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch first",
+            "request": "launch",
+            "mainClass": "Learnings.first",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch l1",
+            "request": "launch",
+            "mainClass": "Learnings.l1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day1Q1",
+            "request": "launch",
+            "mainClass": "SDE.Day1Q1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day1Q2",
+            "request": "launch",
+            "mainClass": "SDE.Day1Q2",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day1Q3",
+            "request": "launch",
+            "mainClass": "SDE.Day1Q3",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day1Q4",
+            "request": "launch",
+            "mainClass": "SDE.Day1Q4",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day1Q5",
+            "request": "launch",
+            "mainClass": "SDE.Day1Q5",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day1Q6",
+            "request": "launch",
+            "mainClass": "SDE.Day1Q6",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch Day2Q1",
+            "request": "launch",
+            "mainClass": "SDE.Day2Q1",
+            "projectName": "Data Structures_b60b2b82"
+        }
+    ]
+}
