@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch day3",
+            "request": "launch",
+            "mainClass": "day3",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch day2",
             "request": "launch",
             "mainClass": "day2",
