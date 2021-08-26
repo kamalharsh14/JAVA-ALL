@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch day4",
+            "request": "launch",
+            "mainClass": "day4",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch MatrixParityCheck",
+            "request": "launch",
+            "mainClass": "MatrixParityCheck",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch day3",
             "request": "launch",
             "mainClass": "day3",

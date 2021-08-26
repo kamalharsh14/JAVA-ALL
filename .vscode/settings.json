@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "src\\Amazon",
-        "src\\DCCN"
+        "src\\DCCN",
+        "src"
     ]
 }
