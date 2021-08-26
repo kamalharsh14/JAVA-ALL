@@ -8,37 +8,23 @@ public class BinaryTree {
         Node left;
         Node right;
 
-        Node(int data){
+        public Node(int data){
             this.data = data;
             left = null;
             right = null;
         }
     }
-    void insert(int data){
-        Node root = new Node(data);
-    }
-    void insertatleft(int data){
-        Node root = new Node(data);
-        root.left = root;
-        root.left.right = root;
-        root.left.left = root;
-    }
-
-    void insertatright(int data){
-        Node root = new Node(data);
-        root.right = root;
-        root.right.left = root;
-        root.right.right = root;
-    }
-
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Enter root: ");
-        int n = in.nextInt();
         BinaryTree ob = new BinaryTree();
-        ob.insert(n);
-        ob.insertatright(n);
-        ob.insertatleft(n);
+        Node root = ob.new Node(3);
+        root.left = ob.new Node(4);
+        root.right = ob.new Node(2);
+        root.left.right = ob.new Node(3);
+        root.right.left = ob.new Node(1);
+        System.out.println("             "+root.data+"  <- Root               ");
+        System.out.println("          "+root.left.data+"    "+root.right.data);
+        System.out.println("           "+root.left.right.data+"  "+root.right.left.data);
         in.close();
     }
 }

@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BinaryTree",
+            "request": "launch",
+            "mainClass": "Learnings.BinaryTree",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch day4",
             "request": "launch",
             "mainClass": "day4",
