@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch postorder",
+            "request": "launch",
+            "mainClass": "Learnings.postorder",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch inorder",
+            "request": "launch",
+            "mainClass": "Learnings.inorder",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch preorder",
+            "request": "launch",
+            "mainClass": "Learnings.preorder",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch BinaryTree",
             "request": "launch",
             "mainClass": "Learnings.BinaryTree",
