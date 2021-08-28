@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MXEVNSUB",
+            "request": "launch",
+            "mainClass": "Codechef.MXEVNSUB",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch PROGLANG",
+            "request": "launch",
+            "mainClass": "Codechef.PROGLANG",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch levelorder",
             "request": "launch",
             "mainClass": "Learnings.levelorder",
