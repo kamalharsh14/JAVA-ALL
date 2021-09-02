@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch random",
+            "request": "launch",
+            "mainClass": "Learnings.random",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch MXEVNSUB",
             "request": "launch",
             "mainClass": "Codechef.MXEVNSUB",
