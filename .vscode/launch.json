@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch quantifiers",
+            "request": "launch",
+            "mainClass": "Regex.quantifiers",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch matches",
+            "request": "launch",
+            "mainClass": "Regex.matches",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch matcher",
+            "request": "launch",
+            "mainClass": "Regex.matcher",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch random2",
             "request": "launch",
             "mainClass": "Learnings.random2",
