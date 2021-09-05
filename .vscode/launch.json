@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch metacharacters",
+            "request": "launch",
+            "mainClass": "Regex.metacharacters",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch quantifiers",
             "request": "launch",
             "mainClass": "Regex.quantifiers",
