@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch removeloop",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.removeloop",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch detectloop",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.detectloop",
