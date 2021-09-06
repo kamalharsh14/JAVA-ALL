@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch detectloop",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.detectloop",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch reverseknodes",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.reverseknodes",
