@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch reverseIterative",
+            "request": "launch",
+            "mainClass": "FINAL450.reverseIterative",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch metacharacters",
             "request": "launch",
             "mainClass": "Regex.metacharacters",
