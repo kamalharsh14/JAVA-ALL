@@ -1,4 +1,4 @@
-package FINAL450;
+package FINAL450.Linkedlist;
 
 import java.util.Scanner;
 
