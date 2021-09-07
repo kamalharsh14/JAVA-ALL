@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch lengthofloop",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.lengthofloop",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch deleteloop",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.deleteloop",
