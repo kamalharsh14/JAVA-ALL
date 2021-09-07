@@ -56,7 +56,7 @@ public class reverseIterative {
             System.out.print(temp.data+"->");
             temp = temp.next;
         }
-        System.out.println("->Null");
+        System.out.println("Null");
     }
 
     void reverse(){
