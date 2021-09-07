@@ -96,7 +96,7 @@ public class firstnodeinloop {
                 slowptr = slowptr.next;
                 fastptr = fastptr.next;
             }
-            first = fastptr.next;
+            first = slowptr.next;
         }
         return first;
     }
