@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch firstnodeinloop",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.firstnodeinloop",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch removeloop",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.removeloop",
