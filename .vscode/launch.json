@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch removeduplicateunsorted",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.removeduplicateunsorted",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch hashmap",
             "request": "launch",
             "mainClass": "Learnings.hashmap",
