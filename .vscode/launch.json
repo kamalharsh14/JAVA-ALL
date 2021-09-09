@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch addone",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.addone",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch sumplusone",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.sumplusone",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch movelasttofirst",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.movelasttofirst",
