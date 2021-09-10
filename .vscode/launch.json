@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch intersection",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.intersection",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch random3",
+            "request": "launch",
+            "mainClass": "Learnings.random3",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch addlinkedlist",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.addlinkedlist",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch addone",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.addone",
