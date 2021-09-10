@@ -82,7 +82,6 @@ public class intersectionpoint {
     }
 
     int intersec(Node head1, Node head2){
-        Node headnode = null;
         Node first = head1;
         Node second = head2;
         int c1 = 0, c2 = 0;
