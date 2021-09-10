@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Crc",
+            "request": "launch",
+            "mainClass": "Crc",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch intersectionpoint",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.intersectionpoint",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch intersection",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.intersection",
