@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch watermelon",
+            "request": "launch",
+            "mainClass": "Codeforces.watermelon",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch middle",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.middle",
