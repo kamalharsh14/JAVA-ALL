@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch middle",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.middle",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch delnode",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.delnode",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch addtwoll",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.addtwoll",
