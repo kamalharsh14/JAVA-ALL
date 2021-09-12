@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch helpfulmaths",
+            "request": "launch",
+            "mainClass": "Codeforces.helpfulmaths",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch petyastrings",
             "request": "launch",
             "mainClass": "Codeforces.petyastrings",
