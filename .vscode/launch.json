@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch chatroom",
+            "request": "launch",
+            "mainClass": "Codeforces.chatroom",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch lucky",
             "request": "launch",
             "mainClass": "Codeforces.lucky",
