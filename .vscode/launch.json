@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch deleteelement",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.deleteelement",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch circular",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.circular",
