@@ -16,8 +16,7 @@ public class deleteelement {
                 h = ob.insert(n);
             }
         }
-        int pos = in.nextInt();
-        ob.makeloop(pos);
+        ob.makeloop();
         ob.displayloop(h);
         int a = in.nextInt();
         Node n = ob.delete(a);
@@ -62,16 +61,11 @@ public class deleteelement {
         return head;        
     }
 
-    public void makeloop(int pos){
+    public void makeloop(){
         Node temp = head;
-        Node endnext = null;
-        int c = 1;
+        Node endnext = head;
         while(temp.next != null){
-            if(c == pos){
-                endnext = temp;
-            }
             temp = temp.next;
-            c++;
         }
         temp.next = endnext;
     }    
