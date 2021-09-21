@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch circular",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.circular",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch combinations",
             "request": "launch",
             "mainClass": "Codeforces.combinations",
