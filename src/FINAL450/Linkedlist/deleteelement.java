@@ -18,14 +18,14 @@ public class deleteelement {
         }
         int pos = in.nextInt();
         ob.makeloop(pos);
-        ob.displayloop();
+        ob.displayloop(h);
         int a = in.nextInt();
         Node n = ob.delete(a);
-        ob.displayloop();
+        ob.displayloop(n);
         in.close();
     }
 
-    void displayloop(){
+    void displayloop(Node head){
         System.out.print("[");
         Node temp = head;
         while(temp.next != head){
