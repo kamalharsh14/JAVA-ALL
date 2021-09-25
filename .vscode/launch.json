@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch reverseknodesinDLL",
+            "request": "launch",
+            "mainClass": "FINAL450.Linkedlist.reverseknodesinDLL",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch reverseDLL",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.reverseDLL",

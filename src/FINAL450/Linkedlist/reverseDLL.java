@@ -15,11 +15,14 @@ public class reverseDLL {
     }
 
     Node head = null;
+    Node tail=  null;
 
     void insert(int data){
         Node add = new Node(data);
         if(head == null){
             head = add;
+            head.prev = null;
+            head.next = null;
         }
         else{
             Node temp = head;
@@ -30,13 +33,26 @@ public class reverseDLL {
             temp.next = add;
         }
     }
+    void reverse(){
+        Node temp = null;
+        Node current = head;
+
+        while (current != null) {
+            temp = current.prev;
+            current.prev = current.next;
+            current.next = temp;
+            current = current.prev;
+        }
+        
+        if (temp != null) {
+            head = temp.prev;
+        }
+    }
 
     void display(){
         Node temp = head;
-        System.out.println("Orignal");
         while(temp != null){
             System.out.print(temp.data+"->");
-            temp.prev = temp;
             temp = temp.next;
         }
         System.out.print("NULL\n");
@@ -55,6 +71,8 @@ public class reverseDLL {
                 ob.insert(n);
             }
         }
+        ob.display();
+        ob.reverse();
         ob.display();
         in.close();
     }
