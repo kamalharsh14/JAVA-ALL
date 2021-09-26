@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MAGDOORS",
+            "request": "launch",
+            "mainClass": "Codechef.MAGDOORS",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch DIWALI1",
+            "request": "launch",
+            "mainClass": "Codechef.DIWALI1",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch VACCINQ",
+            "request": "launch",
+            "mainClass": "Codechef.VACCINQ",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch SUPCHEF",
+            "request": "launch",
+            "mainClass": "Codechef.SUPCHEF",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch reverseknodesinDLL",
             "request": "launch",
             "mainClass": "FINAL450.Linkedlist.reverseknodesinDLL",
