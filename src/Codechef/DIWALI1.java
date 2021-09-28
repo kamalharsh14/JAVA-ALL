@@ -12,12 +12,9 @@ public class DIWALI1 {
             int x = in.nextInt();
             int y = in.nextInt();
             
-            int min = Math.min(b*x*a, c*y*a);
-            int max = Math.max(b*x*a, c*y*a);
-            int total = 0; 
+            int min = Math.min(b+ x*a, c + y*a);
             
-            
-            System.out.println(total);
+            System.out.println(p/min);
         }
         in.close();
     }
