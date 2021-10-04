@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MIXTURE",
+            "request": "launch",
+            "mainClass": "Codechef.MIXTURE",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch day9",
+            "request": "launch",
+            "mainClass": "day9",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch MAGDOORS",
             "request": "launch",
             "mainClass": "Codechef.MAGDOORS",
