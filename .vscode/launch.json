@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ANDSUBAR",
+            "request": "launch",
+            "mainClass": "Codechef.ANDSUBAR",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch THREEBOX",
+            "request": "launch",
+            "mainClass": "Codechef.THREEBOX",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch MIXTURE",
             "request": "launch",
             "mainClass": "Codechef.MIXTURE",
