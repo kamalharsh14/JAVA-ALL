@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DIGITREM",
+            "request": "launch",
+            "mainClass": "Codechef.DIGITREM",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch day10",
+            "request": "launch",
+            "mainClass": "day10",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch ANDSUBAR",
             "request": "launch",
             "mainClass": "Codechef.ANDSUBAR",
