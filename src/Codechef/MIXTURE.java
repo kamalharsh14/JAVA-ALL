@@ -17,6 +17,6 @@ public class MIXTURE {
                 System.out.println("Solution");
             }
         }
-
+        in.close();
     }
 }
