@@ -10,8 +10,8 @@ public class maxmininarray {
             a[i] = in.nextInt();
         }
 
-        int max = -99999999; 
-        int min = 99999999;
+        int max = a[0]; 
+        int min = a[0];
 
         for(int i = 0 ; i < n ; i++){
             if(min > a[i]){
