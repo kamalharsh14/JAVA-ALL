@@ -1,11 +1,11 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 
 import java.util.Scanner;
 
-public class firstnodeinloop {
+public class removeloop {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        firstnodeinloop ob = new firstnodeinloop();
+        removeloop ob = new removeloop();
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
@@ -17,8 +17,10 @@ public class firstnodeinloop {
         }
         System.out.print("Create Cycle at: "); int n = in.nextInt();
         ob.createcycle(n);
-        Node s = ob.loop();
-        System.out.println(s.data);
+        boolean s = ob.loop();
+        System.out.println("Loop present: "+s);
+        ob.remove();
+        ob.display();
         in.close();
     }
 
@@ -69,11 +71,11 @@ public class firstnodeinloop {
             System.out.print(temp.data+"->");
             temp = temp.next;
         }
-        System.out.println("->Null");
+        System.out.println("Null");
     }
 
-    Node loop(){
-        Node first = null;;
+    boolean loop(){
+        boolean s = false;
         Node fastptr = head;
         Node slowptr = head;
 
@@ -81,25 +83,27 @@ public class firstnodeinloop {
             fastptr = fastptr.next.next;
             slowptr = slowptr.next;
             if(fastptr == slowptr){
+                s = true;
                 break;
             }
         }
-        if(slowptr == head){
-            while(fastptr.next != slowptr){
-                fastptr = fastptr.next;
-            }
-            first = fastptr.next;
-        }
-        else if(slowptr == fastptr){
-            fastptr = head;
-            while(slowptr.next != fastptr.next){
-                slowptr = slowptr.next;
-                fastptr = fastptr.next;
-            }
-            first = slowptr.next;
-        }
-        return first;
+        return s;
     }
-
     
+    void remove(){
+        Node fastptr = head;
+        Node slowptr = head;
+
+        do{
+            fastptr = fastptr.next.next;
+            slowptr = slowptr.next;
+        }while(fastptr != slowptr);
+
+        fastptr = head;
+        while(fastptr.next != slowptr.next){
+            fastptr = fastptr.next;
+            slowptr = slowptr.next;
+        }
+        slowptr.next = null;
+    }
 }

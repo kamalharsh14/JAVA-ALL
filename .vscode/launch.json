@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LargestinArray",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.LargestinArray",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
+            "name": "Launch flatten",
+            "request": "launch",
+            "mainClass": "GFG.Linkedlist.flatten",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch DIGITREM",
             "request": "launch",
             "mainClass": "Codechef.DIGITREM",

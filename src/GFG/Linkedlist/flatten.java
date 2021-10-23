@@ -1,12 +1,15 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 
 import java.util.Scanner;
 
-public class reverseknodes {
+public class flatten {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        reverseknodes ob = new reverseknodes();
+        flatten ob = new flatten();
         Node h = null;
+        Node b = null;
+        b = null;
+        System.out.println("Enter List Elements: (PRESS -1 TO EXIT)");
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
@@ -14,26 +17,33 @@ public class reverseknodes {
             }
             else{
                 h = ob.insert(n);
+                System.out.println("Enter Bottom Elements: (PRESS -1 TO EXIT)");
+                for(int j = 1 ; j > 0 ; j ++){
+                    int k = in.nextInt();
+                    if(n == -1){
+                        break;
+                    }
+                    else{
+                        b = ob.insert(k);
+                    }
+                }
             }
         }
         System.out.println("Original:");
         ob.display(h);
-        System.out.print("Enter K: ");
-        int k = in.nextInt();
-        System.out.println("\nReversed:");
-        Node he = ob.reverse(h,k);
-        ob.display(he);
         in.close();
     }
 
     class Node{
         Node next;
+        Node bottom;
         
         int data;
 
         Node(int data){
             this.data = data;
             this.next = null;
+            this.bottom = null;
         }
     }
 
@@ -61,25 +71,5 @@ public class reverseknodes {
             temp = temp.next;
         }
         System.out.println("Null");
-    }
-
-    Node reverse(Node head, int k){
-        Node curr = head;
-        Node nex = curr.next;
-        Node prev = null;
-        int c = 0;
-        while(curr != null && c < k){
-            nex = curr.next;
-            curr.next = prev;
-
-            prev = curr;
-            curr = nex;
-            c++;
-        }
-        if(nex != null){
-            head.next=  reverse(nex, k);
-        }
-
-        return prev;
     }
 }

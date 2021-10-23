@@ -1,11 +1,11 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 
 import java.util.*;
 
-public class intersection {
+public class intersectionpoint {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        intersection ob = new intersection();
+        intersectionpoint ob = new intersectionpoint();
         Node head_first=  null;
         Node head_second = null;
         System.out.print("\nEnter elements of first List:");
@@ -33,8 +33,8 @@ public class intersection {
         System.out.println("Second List: ");
         ob.display(head_second);
         System.out.println("Intersection List: ");
-        Node headnode = ob.intersec(head_first, head_second);
-        ob.display(headnode);
+        int headnode = ob.intersec(head_first, head_second);
+        System.out.println(headnode);
         
         
         in.close();
@@ -81,39 +81,45 @@ public class intersection {
         return head;
     }
 
-    Node intersec(Node head1, Node head2){
-        Node headnode = null;
+    int intersec(Node head1, Node head2){
         Node first = head1;
         Node second = head2;
-        Node temp = headnode;
-        
-        while(first != null && second != null){
-            if(first.data == second.data){
-                if(headnode == null){
-                    Node add = new Node(first.data);
-                    headnode = add;
-                    temp = headnode;
-                }
-                else{
-                    while(temp.next != null){
-                        temp = temp.next;
-                    }
-                    Node add = new Node(first.data);
-                    temp.next = add;
-                }
+        int c1 = 0, c2 = 0;
+
+        while(first != null){
+            c1++;
+            first = first.next;
+        }
+
+        while(second != null){
+            c2++;
+            second = second.next;
+        }
+
+        int diff = Math.abs(c1 - c2);
+        first = head1;
+        second = head2;
+        if(c1 > c2){
+            for(int i = 0 ; i < diff; i ++){
                 first = first.next;
-                second = second.next;
-            }
-            else{
-                if(first.data < second.data){
-                    first = first.next;
-                }
-                else{
-                    second=  second.next;
-                }
             }
         }
-        return headnode;
+        else{
+            for(int i = 0 ; i < diff; i++){
+                second = second.next;
+            }
+        }
+        
+        while(first != second){
+            first =first.next;
+            second = second.next;
+        }
+        if(first != null){
+            return first.data;
+        }
+        else{
+            return -1;
+        }
     }
 
     void display(Node head){

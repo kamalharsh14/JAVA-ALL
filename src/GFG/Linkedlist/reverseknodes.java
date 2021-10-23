@@ -1,24 +1,28 @@
-package FINAL450.Linkedlist;
-import java.util.*;
-public class movelasttofirst {
+package GFG.Linkedlist;
 
+import java.util.Scanner;
+
+public class reverseknodes {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        movelasttofirst ob = new movelasttofirst();
+        reverseknodes ob = new reverseknodes();
+        Node h = null;
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
                 break;
             }
             else{
-                ob.insert(n);
+                h = ob.insert(n);
             }
         }
-        System.out.println("Original: ");
-        ob.display();
-        System.out.println("New: ");
-        ob.move();
-        ob.display();
+        System.out.println("Original:");
+        ob.display(h);
+        System.out.print("Enter K: ");
+        int k = in.nextInt();
+        System.out.println("\nReversed:");
+        Node he = ob.reverse(h,k);
+        ob.display(he);
         in.close();
     }
 
@@ -35,7 +39,7 @@ public class movelasttofirst {
 
     Node head = null;
 
-    void insert(int data){
+    Node insert(int data){
         Node insert=  new Node(data);
         if(head == null){
             head = insert;
@@ -47,21 +51,10 @@ public class movelasttofirst {
             }
             temp.next = insert;
         }
+        return head;
     }
 
-    void move(){
-        Node temp = head;
-
-        while(temp.next.next != null){
-            temp = temp.next;
-        }
-        Node c = temp.next;
-        temp.next.next = head;
-        temp.next = null;
-        head =  c;
-    }
-
-    void display(){
+    void display(Node head){
         Node temp = head;
         while(temp != null){
             System.out.print(temp.data+"->");
@@ -69,5 +62,24 @@ public class movelasttofirst {
         }
         System.out.println("Null");
     }
-    
+
+    Node reverse(Node head, int k){
+        Node curr = head;
+        Node nex = curr.next;
+        Node prev = null;
+        int c = 0;
+        while(curr != null && c < k){
+            nex = curr.next;
+            curr.next = prev;
+
+            prev = curr;
+            curr = nex;
+            c++;
+        }
+        if(nex != null){
+            head.next=  reverse(nex, k);
+        }
+
+        return prev;
+    }
 }

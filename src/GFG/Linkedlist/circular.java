@@ -1,10 +1,9 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 import java.util.*;
-public class deleteelement {
-
+public class circular {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        deleteelement ob = new deleteelement();
+        circular ob = new circular();
         Node h = null;
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
@@ -16,22 +15,22 @@ public class deleteelement {
                 h = ob.insert(n);
             }
         }
-        ob.makeloop();
-        ob.displayloop(h);
-        int a = in.nextInt();
-        Node n = ob.delete(a);
-        ob.displayloop(n);
+        int pos = in.nextInt();
+        ob.makeloop(pos);
+        ob.displayloop();
+        Boolean s = ob.isCircular(h);
+        System.out.println("\nCircular Linked List? \n"+s);
         in.close();
     }
 
-    void displayloop(Node head){
+    void displayloop(){
         System.out.print("[");
         Node temp = head;
         while(temp.next != head){
             System.out.print(temp.data+" -> ");
             temp = temp.next;
         }
-        System.out.println(temp.data+" -> ("+head.data+")]");
+        System.out.print(temp.data+" -> ("+head.data+")]");
     }
 
     class Node{
@@ -61,30 +60,31 @@ public class deleteelement {
         return head;        
     }
 
-    public void makeloop(){
+    public void makeloop(int pos){
         Node temp = head;
-        Node endnext = head;
+        Node endnext = null;
+        int c = 1;
         while(temp.next != null){
+            if(c == pos){
+                endnext = temp;
+            }
             temp = temp.next;
+            c++;
         }
         temp.next = endnext;
-    }    
+    }
 
-    Node delete(int n){
-        Node temp = head;
-        Node prev = head;
-        if(head == null){
-            return null;
-        }
-        else{
-            while(temp.next != head){
-                if(temp.data == n){
-                    prev.next = temp.next;
-                }
-                prev = temp;
-                temp = temp.next;
-            }
-            return head;
-        }
+    boolean isCircular(Node head)
+    {
+	Node temp = head;
+	while(temp.next != head && temp.next != null){
+	    temp = temp.next;
+	}
+	if(temp.next == head){
+	    return true;
+	}
+	else{
+	    return false;
+	}
     }
 }

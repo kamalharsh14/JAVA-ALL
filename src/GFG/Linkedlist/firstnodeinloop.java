@@ -1,11 +1,11 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 
 import java.util.Scanner;
 
-public class lengthofloop {
+public class firstnodeinloop {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        lengthofloop ob = new lengthofloop();
+        firstnodeinloop ob = new firstnodeinloop();
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
@@ -17,8 +17,8 @@ public class lengthofloop {
         }
         System.out.print("Create Cycle at: "); int n = in.nextInt();
         ob.createcycle(n);
-        int s = ob.loop();
-        System.out.println("Length: "+s);
+        Node s = ob.loop();
+        System.out.println(s.data);
         in.close();
     }
 
@@ -72,27 +72,34 @@ public class lengthofloop {
         System.out.println("->Null");
     }
 
-    int loop(){
-        int length = 1;
-        Node high = head;
-        Node low = head;
-        
-        while(high.next.next != null && high.next != null){
-            high = high.next.next;
-            low = low.next;
-            if(high == low){
+    Node loop(){
+        Node first = null;;
+        Node fastptr = head;
+        Node slowptr = head;
+
+        while(fastptr.next != null && fastptr.next.next != null){
+            fastptr = fastptr.next.next;
+            slowptr = slowptr.next;
+            if(fastptr == slowptr){
                 break;
             }
         }
-        while(high.next != low){
-            length++;
-            high = high.next;
+        if(slowptr == head){
+            while(fastptr.next != slowptr){
+                fastptr = fastptr.next;
+            }
+            first = fastptr.next;
         }
-        return length;
+        else if(slowptr == fastptr){
+            fastptr = head;
+            while(slowptr.next != fastptr.next){
+                slowptr = slowptr.next;
+                fastptr = fastptr.next;
+            }
+            first = slowptr.next;
+        }
+        return first;
     }
 
     
 }
-
-
-

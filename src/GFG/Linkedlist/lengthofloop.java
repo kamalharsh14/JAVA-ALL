@@ -1,11 +1,11 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 
 import java.util.Scanner;
 
-public class reverseIterative {
+public class lengthofloop {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        reverseIterative ob = new reverseIterative();
+        lengthofloop ob = new lengthofloop();
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
@@ -15,11 +15,10 @@ public class reverseIterative {
                 ob.insert(n);
             }
         }
-        System.out.println("Original:");
-        ob.display();
-        System.out.println("Reversed:");
-        ob.reverse();
-        ob.display();
+        System.out.print("Create Cycle at: "); int n = in.nextInt();
+        ob.createcycle(n);
+        int s = ob.loop();
+        System.out.println("Length: "+s);
         in.close();
     }
 
@@ -50,27 +49,50 @@ public class reverseIterative {
         }
     }
 
+    public void createcycle(int pos){
+        Node temp = head;
+        Node endnext = null;
+        int c = 1;
+        while(temp.next != null){
+            if(c == pos){
+                endnext = temp;
+            }
+            temp = temp.next;
+            c++;
+        }
+        temp.next = endnext;
+    }
+
     void display(){
         Node temp = head;
         while(temp != null){
             System.out.print(temp.data+"->");
             temp = temp.next;
         }
-        System.out.println("Null");
+        System.out.println("->Null");
     }
 
-    void reverse(){
-        Node curr = head;
-        Node nex = curr.next;
-        Node prev = null;
+    int loop(){
+        int length = 1;
+        Node high = head;
+        Node low = head;
         
-        while(curr != null){
-            nex = curr.next;
-            curr.next = prev;
-
-            prev = curr;
-            curr = nex;
+        while(high.next.next != null && high.next != null){
+            high = high.next.next;
+            low = low.next;
+            if(high == low){
+                break;
+            }
         }
-        head = prev;
+        while(high.next != low){
+            length++;
+            high = high.next;
+        }
+        return length;
     }
+
+    
 }
+
+
+

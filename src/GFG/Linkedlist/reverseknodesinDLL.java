@@ -1,74 +1,73 @@
-package FINAL450.Linkedlist;
-
-import java.util.Scanner;
-
-public class flatten {
+package GFG.Linkedlist;
+import java.util.*;
+public class reverseknodesinDLL {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        flatten ob = new flatten();
+        reverseknodesinDLL ob = new reverseknodesinDLL();
         Node h = null;
-        Node b = null;
-        System.out.println("Enter List Elements: (PRESS -1 TO EXIT)");
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
+
             if(n == -1){
                 break;
             }
             else{
                 h = ob.insert(n);
-                System.out.println("Enter Bottom Elements: (PRESS -1 TO EXIT)");
-                for(int j = 1 ; j > 0 ; j ++){
-                    int k = in.nextInt();
-                    if(n == -1){
-                        break;
-                    }
-                    else{
-                        b = ob.insert(k);
-                    }
-                }
             }
         }
-        System.out.println("Original:");
         ob.display(h);
+        int n = in.nextInt();
+        Node hd = ob.reverse(h,n);
+        ob.display(hd);
         in.close();
     }
-
+    
     class Node{
-        Node next;
-        Node bottom;
-        
         int data;
+        Node next;
+        Node prev;
 
         Node(int data){
             this.data = data;
             this.next = null;
-            this.bottom = null;
+            this.prev = null;
         }
     }
 
     Node head = null;
+    Node tail=  null;
 
     Node insert(int data){
-        Node insert=  new Node(data);
+        Node add = new Node(data);
         if(head == null){
-            head = insert;
+            head = add;
+            head.prev = null;
+            head.next = null;
         }
         else{
             Node temp = head;
             while(temp.next != null){
                 temp = temp.next;
             }
-            temp.next = insert;
+            add.prev = temp;
+            temp.next = add;
         }
         return head;
+    }
+
+
+    Node reverse(Node head, int n){
+        Node current = head;
+        
+        return current;
     }
 
     void display(Node head){
         Node temp = head;
         while(temp != null){
-            System.out.print(temp.data+"->");
+            System.out.print(temp.data+"<->");
             temp = temp.next;
         }
-        System.out.println("Null");
+        System.out.print("NULL\n");
     }
 }

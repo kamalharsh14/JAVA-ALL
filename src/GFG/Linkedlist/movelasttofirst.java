@@ -1,24 +1,24 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 import java.util.*;
-public class middle {
+public class movelasttofirst {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        middle ob = new middle();
-        Node h = null; Node m;
+        movelasttofirst ob = new movelasttofirst();
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
                 break;
             }
             else{
-                h = ob.insert(n);
+                ob.insert(n);
             }
         }
-        System.out.println("\nOriginal:");
-        ob.display(h);
-        System.out.println("\nMiddle: ");
-        m = ob.mid(h);
-        ob.display(m);
+        System.out.println("Original: ");
+        ob.display();
+        System.out.println("New: ");
+        ob.move();
+        ob.display();
         in.close();
     }
 
@@ -35,7 +35,7 @@ public class middle {
 
     Node head = null;
 
-    Node insert(int data){
+    void insert(int data){
         Node insert=  new Node(data);
         if(head == null){
             head = insert;
@@ -47,31 +47,21 @@ public class middle {
             }
             temp.next = insert;
         }
-        return head;
-    }
-    Node mid(Node head){
-        Node temp = head;
-        int counter = 0;
-        Node mid = null;
-        while(temp != null){
-            temp = temp.next;
-            counter++;
-        }
-        temp = head;
-        int middle = counter / 2;
-        if(middle >= 1){
-            while(middle-- > 0){
-                temp = temp.next;
-                mid = temp;
-            }
-        }
-        else{
-            mid = temp;
-        }
-        return mid;
     }
 
-    void display(Node head){
+    void move(){
+        Node temp = head;
+
+        while(temp.next.next != null){
+            temp = temp.next;
+        }
+        Node c = temp.next;
+        temp.next.next = head;
+        temp.next = null;
+        head =  c;
+    }
+
+    void display(){
         Node temp = head;
         while(temp != null){
             System.out.print(temp.data+"->");
@@ -79,6 +69,5 @@ public class middle {
         }
         System.out.println("Null");
     }
-
     
 }

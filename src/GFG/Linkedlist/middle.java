@@ -1,10 +1,10 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 import java.util.*;
-public class delnode {
+public class middle {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        delnode ob = new delnode();
-        Node h = null;
+        middle ob = new middle();
+        Node h = null; Node m;
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
@@ -16,10 +16,9 @@ public class delnode {
         }
         System.out.println("\nOriginal:");
         ob.display(h);
-        System.out.println("\nUpdated:");
-        Node r = ob.delete();
-        ob.display(r);
-        
+        System.out.println("\nMiddle: ");
+        m = ob.mid(h);
+        ob.display(m);
         in.close();
     }
 
@@ -50,40 +49,26 @@ public class delnode {
         }
         return head;
     }
-    Node rev(Node head){
-        Node curr = head;
-        Node nex = curr.next;
-        Node prev = null;
-
-        while(curr != null){
-            nex = curr.next;
-            curr.next = prev;
-
-            prev = curr;
-            curr = nex;
-        }
-        return prev;
-    }
-
-    Node delete(){
-        Node temp = rev(head);
-        Node curr = temp;
-        Node prev = temp;
-        int ma = temp.data;
-        temp = temp.next;
-
+    Node mid(Node head){
+        Node temp = head;
+        int counter = 0;
+        Node mid = null;
         while(temp != null){
-            if(temp.data >= ma){
-                ma = temp.data;
-                prev = temp;
+            temp = temp.next;
+            counter++;
+        }
+        temp = head;
+        int middle = counter / 2;
+        if(middle >= 1){
+            while(middle-- > 0){
                 temp = temp.next;
-            }
-            else{
-                prev.next = temp.next;
-                temp = prev.next;
+                mid = temp;
             }
         }
-        return rev(curr);
+        else{
+            mid = temp;
+        }
+        return mid;
     }
 
     void display(Node head){
@@ -94,4 +79,6 @@ public class delnode {
         }
         System.out.println("Null");
     }
+
+    
 }

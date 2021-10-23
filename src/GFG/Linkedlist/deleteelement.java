@@ -1,9 +1,10 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 import java.util.*;
-public class circular {
+public class deleteelement {
+
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        circular ob = new circular();
+        deleteelement ob = new deleteelement();
         Node h = null;
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
@@ -15,22 +16,22 @@ public class circular {
                 h = ob.insert(n);
             }
         }
-        int pos = in.nextInt();
-        ob.makeloop(pos);
-        ob.displayloop();
-        Boolean s = ob.isCircular(h);
-        System.out.println("\nCircular Linked List? \n"+s);
+        ob.makeloop();
+        ob.displayloop(h);
+        int a = in.nextInt();
+        Node n = ob.delete(a);
+        ob.displayloop(n);
         in.close();
     }
 
-    void displayloop(){
+    void displayloop(Node head){
         System.out.print("[");
         Node temp = head;
         while(temp.next != head){
             System.out.print(temp.data+" -> ");
             temp = temp.next;
         }
-        System.out.print(temp.data+" -> ("+head.data+")]");
+        System.out.println(temp.data+" -> ("+head.data+")]");
     }
 
     class Node{
@@ -60,31 +61,30 @@ public class circular {
         return head;        
     }
 
-    public void makeloop(int pos){
+    public void makeloop(){
         Node temp = head;
-        Node endnext = null;
-        int c = 1;
+        Node endnext = head;
         while(temp.next != null){
-            if(c == pos){
-                endnext = temp;
-            }
             temp = temp.next;
-            c++;
         }
         temp.next = endnext;
-    }
+    }    
 
-    boolean isCircular(Node head)
-    {
-	Node temp = head;
-	while(temp.next != head && temp.next != null){
-	    temp = temp.next;
-	}
-	if(temp.next == head){
-	    return true;
-	}
-	else{
-	    return false;
-	}
+    Node delete(int n){
+        Node temp = head;
+        Node prev = head;
+        if(head == null){
+            return null;
+        }
+        else{
+            while(temp.next != head){
+                if(temp.data == n){
+                    prev.next = temp.next;
+                }
+                prev = temp;
+                temp = temp.next;
+            }
+            return head;
+        }
     }
 }

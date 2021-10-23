@@ -1,11 +1,11 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 
 import java.util.Scanner;
 
-public class deleteloop {
+public class detectloop {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        deleteloop ob = new deleteloop();
+        detectloop ob = new detectloop();
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
@@ -17,8 +17,8 @@ public class deleteloop {
         }
         System.out.print("Create Cycle at: "); int n = in.nextInt();
         ob.createcycle(n);
-        ob.loop();
-        ob.display();
+        boolean s = ob.loop();
+        System.out.println(s);
         in.close();
     }
 
@@ -69,10 +69,11 @@ public class deleteloop {
             System.out.print(temp.data+"->");
             temp = temp.next;
         }
-        System.out.println("Null");
+        System.out.println("->Null");
     }
 
-    void loop(){
+    boolean loop(){
+        boolean s = false;
         Node fastptr = head;
         Node slowptr = head;
 
@@ -80,23 +81,11 @@ public class deleteloop {
             fastptr = fastptr.next.next;
             slowptr = slowptr.next;
             if(fastptr == slowptr){
+                s = true;
                 break;
             }
         }
-        if(slowptr == head){
-            while(fastptr.next != slowptr){
-                fastptr = fastptr.next;
-            }
-            fastptr.next = null;
-        }
-        else if(slowptr == fastptr){
-            fastptr = head;
-            while(slowptr.next != fastptr.next){
-                slowptr = slowptr.next;
-                fastptr = fastptr.next;
-            }
-            slowptr.next = null;
-        }
+        return s;
     }
 
     

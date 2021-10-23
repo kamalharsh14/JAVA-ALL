@@ -1,11 +1,11 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 
 import java.util.Scanner;
 
-public class removeloop {
+public class deleteloop {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        removeloop ob = new removeloop();
+        deleteloop ob = new deleteloop();
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
@@ -17,9 +17,7 @@ public class removeloop {
         }
         System.out.print("Create Cycle at: "); int n = in.nextInt();
         ob.createcycle(n);
-        boolean s = ob.loop();
-        System.out.println("Loop present: "+s);
-        ob.remove();
+        ob.loop();
         ob.display();
         in.close();
     }
@@ -74,8 +72,7 @@ public class removeloop {
         System.out.println("Null");
     }
 
-    boolean loop(){
-        boolean s = false;
+    void loop(){
         Node fastptr = head;
         Node slowptr = head;
 
@@ -83,27 +80,24 @@ public class removeloop {
             fastptr = fastptr.next.next;
             slowptr = slowptr.next;
             if(fastptr == slowptr){
-                s = true;
                 break;
             }
         }
-        return s;
-    }
-    
-    void remove(){
-        Node fastptr = head;
-        Node slowptr = head;
-
-        do{
-            fastptr = fastptr.next.next;
-            slowptr = slowptr.next;
-        }while(fastptr != slowptr);
-
-        fastptr = head;
-        while(fastptr.next != slowptr.next){
-            fastptr = fastptr.next;
-            slowptr = slowptr.next;
+        if(slowptr == head){
+            while(fastptr.next != slowptr){
+                fastptr = fastptr.next;
+            }
+            fastptr.next = null;
         }
-        slowptr.next = null;
+        else if(slowptr == fastptr){
+            fastptr = head;
+            while(slowptr.next != fastptr.next){
+                slowptr = slowptr.next;
+                fastptr = fastptr.next;
+            }
+            slowptr.next = null;
+        }
     }
+
+    
 }

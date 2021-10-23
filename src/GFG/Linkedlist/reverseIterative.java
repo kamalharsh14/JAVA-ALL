@@ -1,10 +1,11 @@
-package FINAL450.Linkedlist;
-import java.util.*;
-public class addone {
+package GFG.Linkedlist;
 
+import java.util.Scanner;
+
+public class reverseIterative {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        addone ob = new addone();
+        reverseIterative ob = new reverseIterative();
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
@@ -14,11 +15,10 @@ public class addone {
                 ob.insert(n);
             }
         }
-        System.out.println("Original: ");
+        System.out.println("Original:");
         ob.display();
-        ob.rev();
-        ob.addonefnc();
-        ob.rev();
+        System.out.println("Reversed:");
+        ob.reverse();
         ob.display();
         in.close();
     }
@@ -50,11 +50,20 @@ public class addone {
         }
     }
 
-    void rev(){
-        Node curr = head;
-        Node prev = null;
-        Node nex = curr.next;
+    void display(){
+        Node temp = head;
+        while(temp != null){
+            System.out.print(temp.data+"->");
+            temp = temp.next;
+        }
+        System.out.println("Null");
+    }
 
+    void reverse(){
+        Node curr = head;
+        Node nex = curr.next;
+        Node prev = null;
+        
         while(curr != null){
             nex = curr.next;
             curr.next = prev;
@@ -64,37 +73,4 @@ public class addone {
         }
         head = prev;
     }
-
-    void addonefnc(){
-         Node temp = head;
-
-         while(temp != null){
-             if(temp.data == 9 && temp.next == null){
-                 temp.data = 1;
-                 Node add = new Node(0);
-                 add.next = head;
-                 head = add;
-                 temp = temp.next;
-                }
-            else if(temp.data == 9){
-                 temp.data = 0;
-                 temp = temp.next;
-                }
-             else{
-                 temp.data = temp.data + 1;
-                 temp = temp.next;
-                 break;
-             }
-         }
-    }
-
-    void display(){
-        Node temp = head;
-        while(temp != null){
-            System.out.print(temp.data+"->");
-            temp = temp.next;
-        }
-        System.out.println("Null");
-    }
-    
 }

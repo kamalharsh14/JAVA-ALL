@@ -1,38 +1,25 @@
-package FINAL450.Linkedlist;
-
-import java.util.Scanner;
-
-public class removeduplicatessorted {
+package GFG.Linkedlist;
+import java.util.*;
+public class reverserecursive {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        removeduplicatessorted ob = new removeduplicatessorted();
+        reverserecursive ob = new reverserecursive();
+        Node h = null;
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
             if(n == -1){
                 break;
             }
             else{
-                ob.insert(n);
+                h = ob.insert(n);
             }
         }
         System.out.println("Original:");
-        ob.display();
-        ob.removeduplicate();
-        ob.display();
+        ob.display(h);
+        System.out.println("Reversed:");
+        Node head = ob.reverse(h);
+        ob.display(head);
         in.close();
-    }
-
-    void removeduplicate(){
-        Node temp = head;
-
-        while(temp.next != null){
-            if(temp.next.data != temp.data){
-                temp = temp.next;
-            }
-            else{
-                temp.next = temp.next.next;
-            }
-        }
     }
 
     class Node{
@@ -48,7 +35,7 @@ public class removeduplicatessorted {
 
     Node head = null;
 
-    void insert(int data){
+    Node insert(int data){
         Node insert=  new Node(data);
         if(head == null){
             head = insert;
@@ -60,14 +47,26 @@ public class removeduplicatessorted {
             }
             temp.next = insert;
         }
+        return head;
     }
 
-    void display(){
+    void display(Node head){
         Node temp = head;
         while(temp != null){
             System.out.print(temp.data+"->");
             temp = temp.next;
         }
-        System.out.println("Null");
+        System.out.println("->Null");
+    }
+
+    Node reverse(Node head){
+        if(head.next == null || head == null){
+            return head;
+        }
+        Node temp = reverse(head.next);
+        head.next.next = head;
+        head.next = null;
+
+        return temp;
     }
 }

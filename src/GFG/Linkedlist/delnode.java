@@ -1,9 +1,9 @@
-package FINAL450.Linkedlist;
+package GFG.Linkedlist;
 import java.util.*;
-public class reverserecursive {
+public class delnode {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        reverserecursive ob = new reverserecursive();
+        delnode ob = new delnode();
         Node h = null;
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
@@ -14,11 +14,12 @@ public class reverserecursive {
                 h = ob.insert(n);
             }
         }
-        System.out.println("Original:");
+        System.out.println("\nOriginal:");
         ob.display(h);
-        System.out.println("Reversed:");
-        Node head = ob.reverse(h);
-        ob.display(head);
+        System.out.println("\nUpdated:");
+        Node r = ob.delete();
+        ob.display(r);
+        
         in.close();
     }
 
@@ -49,6 +50,41 @@ public class reverserecursive {
         }
         return head;
     }
+    Node rev(Node head){
+        Node curr = head;
+        Node nex = curr.next;
+        Node prev = null;
+
+        while(curr != null){
+            nex = curr.next;
+            curr.next = prev;
+
+            prev = curr;
+            curr = nex;
+        }
+        return prev;
+    }
+
+    Node delete(){
+        Node temp = rev(head);
+        Node curr = temp;
+        Node prev = temp;
+        int ma = temp.data;
+        temp = temp.next;
+
+        while(temp != null){
+            if(temp.data >= ma){
+                ma = temp.data;
+                prev = temp;
+                temp = temp.next;
+            }
+            else{
+                prev.next = temp.next;
+                temp = prev.next;
+            }
+        }
+        return rev(curr);
+    }
 
     void display(Node head){
         Node temp = head;
@@ -56,17 +92,6 @@ public class reverserecursive {
             System.out.print(temp.data+"->");
             temp = temp.next;
         }
-        System.out.println("->Null");
-    }
-
-    Node reverse(Node head){
-        if(head.next == null || head == null){
-            return head;
-        }
-        Node temp = reverse(head.next);
-        head.next.next = head;
-        head.next = null;
-
-        return temp;
+        System.out.println("Null");
     }
 }
