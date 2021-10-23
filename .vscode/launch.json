@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch reverseanarray",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.reverseanarray",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch LargestinArray",
             "request": "launch",
             "mainClass": "GFG.Arrays.LargestinArray",
