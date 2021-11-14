@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch delnode",
+            "request": "launch",
+            "mainClass": "GFG.Linkedlist.delnode",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch sort012",
             "request": "launch",
             "mainClass": "GFG.Arrays.sort012",
