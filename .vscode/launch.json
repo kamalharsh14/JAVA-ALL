@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch kthsmallest",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.kthsmallest",
+            "projectName": "Data Structures_b60b2b82"
+        },
+        {
+            "type": "java",
             "name": "Launch delnode",
             "request": "launch",
             "mainClass": "GFG.Linkedlist.delnode",
