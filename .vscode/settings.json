@@ -3,5 +3,6 @@
         "src\\Amazon",
         "src\\DCCN",
         "src"
-    ]
+    ],
+    "git.ignoreLimitWarning": true
 }
