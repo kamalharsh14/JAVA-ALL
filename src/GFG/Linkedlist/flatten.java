@@ -7,8 +7,6 @@ public class flatten {
         Scanner in = new Scanner(System.in);
         flatten ob = new flatten();
         Node h = null;
-        Node b = null;
-        b = null;
         System.out.println("Enter List Elements: (PRESS -1 TO EXIT)");
         for(int i = 1 ; i > 0; i ++){
             int n = in.nextInt();
@@ -22,9 +20,6 @@ public class flatten {
                     int k = in.nextInt();
                     if(n == -1){
                         break;
-                    }
-                    else{
-                        b = ob.insert(k);
                     }
                 }
             }
