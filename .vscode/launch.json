@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch cyclicrotation",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.cyclicrotation",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch union",
             "request": "launch",
             "mainClass": "GFG.Arrays.union",
