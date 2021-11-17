@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch KadanesAlgo",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.KadanesAlgo",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch cyclicrotation",
             "request": "launch",
             "mainClass": "GFG.Arrays.cyclicrotation",
