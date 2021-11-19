@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch minjumps",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.minjumps",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch minheights",
             "request": "launch",
             "mainClass": "GFG.Arrays.minheights",
