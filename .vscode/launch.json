@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch common",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.common",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch chocolate",
             "request": "launch",
             "mainClass": "GFG.Arrays.chocolate",
