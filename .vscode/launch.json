@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch stock",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.stock",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
+            "name": "Launch count",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.count",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
+            "name": "Launch stocks",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.stocks",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch subset",
             "request": "launch",
             "mainClass": "GFG.Arrays.subset",
