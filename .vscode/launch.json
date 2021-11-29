@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch countpairsum",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.countpairsum",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
+            "name": "Launch countpairsum",
+            "request": "launch",
+            "mainClass": "countpairsum",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch stock",
             "request": "launch",
             "mainClass": "GFG.Arrays.stock",
