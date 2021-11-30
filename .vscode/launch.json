@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch medianofdifferent",
+            "request": "launch",
+            "mainClass": "GFG.Arrays.medianofdifferent",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch countpairsum",
             "request": "launch",
             "mainClass": "GFG.Arrays.countpairsum",
