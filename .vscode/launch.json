@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ap",
+            "request": "launch",
+            "mainClass": "HackerRank.ap",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
+            "name": "Launch binarytoint",
+            "request": "launch",
+            "mainClass": "Taskade.LinkedList.binarytoint",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch medianofdifferent",
             "request": "launch",
             "mainClass": "GFG.Arrays.medianofdifferent",
