@@ -1,4 +1,4 @@
-package Taskade.LinkedList;
+package Taskade.LinkedList.Implementation;
 
 public class LL {
 

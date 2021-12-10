@@ -1,6 +1,7 @@
 package Taskade.LinkedList;
 import java.util.*;
-import Taskade.LinkedList.LL;
+
+import Taskade.LinkedList.Implementation.*;
 
 public class binarytoint {
 

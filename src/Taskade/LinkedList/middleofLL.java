@@ -1,6 +1,6 @@
 package Taskade.LinkedList;
 import java.util.*;
-import Taskade.LinkedList.LL;
+import Taskade.LinkedList.Implementation.LL;
 
 public class middleofLL {
 
