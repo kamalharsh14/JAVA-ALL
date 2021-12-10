@@ -5,7 +5,7 @@ public class LL {
     public class Node{
         public Node next;
         
-        int data;
+        public int data;
 
         Node(int data){
             this.data = data;
@@ -15,7 +15,7 @@ public class LL {
 
     Node head = null;
 
-    void insert(int data){
+    public void insert(int data){
         Node insert=  new Node(data);
         if(head == null){
             head = insert;
@@ -29,11 +29,11 @@ public class LL {
         }
     }
 
-    Node gethead(){
+    public Node gethead(){
         return head;
     }
 
-    void display(){
+    public void display(){
         Node temp = head;
         while(temp != null){
             System.out.print(temp.data+" -> ");
