@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch reverselist",
+            "request": "launch",
+            "mainClass": "Taskade.LinkedList.reverselist",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch middleofLL",
             "request": "launch",
             "mainClass": "Taskade.LinkedList.middleofLL",
