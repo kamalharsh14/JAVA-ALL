@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch mergeintervals",
+            "request": "launch",
+            "mainClass": "mergeintervals",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
+            "name": "Launch trapingrainwater",
+            "request": "launch",
+            "mainClass": "trapingrainwater",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch maxone",
             "request": "launch",
             "mainClass": "maxone",
