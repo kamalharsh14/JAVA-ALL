@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch question2",
+            "request": "launch",
+            "mainClass": "GFG.JobAThon5.question2",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
+            "name": "Launch question1",
+            "request": "launch",
+            "mainClass": "GFG.JobAThon5.question1",
+            "projectName": "JAVA-ALL_46cf8491"
+        },
+        {
+            "type": "java",
             "name": "Launch ArrayImplementation",
             "request": "launch",
             "mainClass": "Learnings.ArrayImplementation",
